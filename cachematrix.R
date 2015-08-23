@@ -2,7 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## Idea was to simply rewrite the example function (cacheMean and the other)
+## Adapted the idea and put instead of the mean() function the R function
+## No check if matrix is invertable
 makeCacheMatrix <- function(x = matrix()) {
   x <- NULL 
   set <- function(y) {
@@ -19,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## Check if the inverted matrix already exists
+## --> If yes, print it else create it 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv_x <- x$get_inv()
